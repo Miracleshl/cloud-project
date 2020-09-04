@@ -1,0 +1,11 @@
+spring:
+  application:
+    name: spring-cloud-consul-consumer
+server:
+  port: 8800
+  cloud:
+    consul:
+      host: localhost
+      port: 8500
+      discovery:
+        register: false  #设置不需要注册到 consul 中
